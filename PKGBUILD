@@ -2,7 +2,7 @@
 
 pkgbase=linux
 pkgver=6.6.4.scx2
-pkgrel=1
+pkgrel=2
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
@@ -29,7 +29,7 @@ _srcname=linux-${pkgver%.*}
 _srctag=v${pkgver%.*}-${pkgver##*.}
 source=(
   https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.{xz,sign}
-  $url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.sig}
+  $url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.asc}
   config  # the main kernel config file
 )
 validpgpkeys=(
@@ -43,11 +43,6 @@ sha256sums=('49e49660c93d8d6d58f118360d3ca8131695ec34669263ca8f041c876da93e45'
             'c0fb6bd3ae8f89e0210f5b867a27292f9d7bba030730de896ba3eea2eca6e236'
             'SKIP'
             '44fa19336718ec32fa0d6bf3acded3c992fa1bca7c227226b637198eb586cad1')
-b2sums=('75f20de7474f45966a32f7a1e5f9beadb2b4e111fe9c0ab769ccaa203e798f1a1b0ee05c3cb14de6bb609e2e9df1e238deeadfc21dbf08c6b407c9530bac11ef'
-        'SKIP'
-        'adb0bbd34265d847d6433c200213c94a1d70ad992fd1a836407a0e3bc06e65780e29273d570a69bdcf28e5f0f8cf6b434b32fb2a9be85f6e1368fd05933f2765'
-        'SKIP'
-        'e3f37e5a9cc75900e2b9ca7dfa5ad91d474e5688eb7cc95521cba76a5acc92b030979397b29ff3e5b11993f98cfc7969b6e25181a2d91aa7069aac8fe5128a33')
 
 export KBUILD_BUILD_HOST=kernel.org
 export KBUILD_BUILD_USER=tj
