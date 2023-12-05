@@ -1,10 +1,10 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
 pkgbase=linux
-pkgver=6.6.4.arch1
+pkgver=6.6.4.scx1
 pkgrel=1
 pkgdesc='Linux'
-url='https://github.com/archlinux/linux'
+url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
 license=(GPL2)
 makedepends=(
@@ -35,22 +35,22 @@ source=(
 validpgpkeys=(
   ABAF11C65A2970B130ABE3C479BE3E4300411886  # Linus Torvalds
   647F28654894E3BD457199BE38DBBDC86092693E  # Greg Kroah-Hartman
-  A2FF3A36AAA56654109064AB19802F8B0D70FC30  # Jan Alexander Steffens (heftig)
+  697C63013E65270255EBC2608744DC1EB26B5A9A  # Tejun Heo <tj@kernel.org>
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
 sha256sums=('49e49660c93d8d6d58f118360d3ca8131695ec34669263ca8f041c876da93e45'
             'SKIP'
-            'fbf89c61fdbef2af00ebbdc6c7019e41e426c9f84dce4fc0005cb0e681f0fff0'
+            '8b5327405d54130e60564a8032580be99b20999f09e8d40e9384003c80fcc1ad'
             'SKIP'
-            'f77aab33af83c635e0445c6e424922cdc054efe2430c8c831f8bead23e08ba88')
+            '44fa19336718ec32fa0d6bf3acded3c992fa1bca7c227226b637198eb586cad1')
 b2sums=('75f20de7474f45966a32f7a1e5f9beadb2b4e111fe9c0ab769ccaa203e798f1a1b0ee05c3cb14de6bb609e2e9df1e238deeadfc21dbf08c6b407c9530bac11ef'
         'SKIP'
-        'f402bb9a5530ff36c888f8c08f923a3b049a63bf3125e6a091c5afdb4b6af4260d7b067a24855c86018966fb59e931f4e5f77b975261d9531ff8c1b885ed9279'
+        '028af12bd001893a72e16194741e4d850fd1c2df6364b0a1b840b5d9227a2e20215681034c4f87d697221415f0606b7cc432b0a445c72838db1045a18f7db20d'
         'SKIP'
-        'eee80b262d447770f89bb16e4c84a5faedd8e2a46d57a5b6ad6371f5a9a8e11194f82c9160d78486fc1a889ad9dea6f0b2d90b8a21235aefc30bf7fe3ef355f6')
+        'e3f37e5a9cc75900e2b9ca7dfa5ad91d474e5688eb7cc95521cba76a5acc92b030979397b29ff3e5b11993f98cfc7969b6e25181a2d91aa7069aac8fe5128a33')
 
-export KBUILD_BUILD_HOST=archlinux
-export KBUILD_BUILD_USER=$pkgbase
+export KBUILD_BUILD_HOST=kernel.org
+export KBUILD_BUILD_USER=tj
 export KBUILD_BUILD_TIMESTAMP="$(date -Ru${SOURCE_DATE_EPOCH:+d @$SOURCE_DATE_EPOCH})"
 
 prepare() {
