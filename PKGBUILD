@@ -73,8 +73,6 @@ prepare() {
 
   make -s kernelrelease > version
   echo "Prepared $pkgbase version $(<version)"
-
-  cat .config > "${startdir}/config.last"
 }
 
 build() {
