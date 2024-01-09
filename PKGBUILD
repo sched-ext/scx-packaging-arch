@@ -1,8 +1,9 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
 pkgbase=linux
-pkgver=6.6.4.scx2
-pkgrel=2
+pkgver=6.7.scx1
+_pkgver=6.7.0.scx1
+pkgrel=1
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
@@ -26,9 +27,9 @@ makedepends=(
 )
 options=('!strip')
 _srcname=linux-${pkgver%.*}
-_srctag=v${pkgver%.*}-${pkgver##*.}
+_srctag=v${_pkgver%.*}-${_pkgver##*.}
 source=(
-  https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.{xz,sign}
+  https://cdn.kernel.org/pub/linux/kernel/v${_pkgver%%.*}.x/${_srcname}.tar.{xz,sign}
   $url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.asc}
   config  # the main kernel config file
 )
@@ -38,11 +39,11 @@ validpgpkeys=(
   697C63013E65270255EBC2608744DC1EB26B5A9A  # Tejun Heo <tj@kernel.org>
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('49e49660c93d8d6d58f118360d3ca8131695ec34669263ca8f041c876da93e45'
+sha256sums=('ef31144a2576d080d8c31698e83ec9f66bf97c677fa2aaf0d5bbb9f3345b1069'
             'SKIP'
-            'c0fb6bd3ae8f89e0210f5b867a27292f9d7bba030730de896ba3eea2eca6e236'
+            'e9c68fb88134e88d5eef32b0b32ccc968d10761d6e0915c1b57696d70b6c682d'
             'SKIP'
-            '44fa19336718ec32fa0d6bf3acded3c992fa1bca7c227226b637198eb586cad1')
+            '06c269a9e06e047effa5e142764f75aec5980a7fe9ad3edb6b283a3e0c5ccb3a')
 
 export KBUILD_BUILD_HOST=kernel.org
 export KBUILD_BUILD_USER=tj
@@ -72,6 +73,8 @@ prepare() {
 
   make -s kernelrelease > version
   echo "Prepared $pkgbase version $(<version)"
+
+  cat .config > "${startdir}/config.last"
 }
 
 build() {
