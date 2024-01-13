@@ -3,7 +3,7 @@
 pkgbase=linux
 pkgver=6.7.scx2
 _pkgver=6.7.0.scx2
-pkgrel=1
+pkgrel=2
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
@@ -43,7 +43,7 @@ sha256sums=('ef31144a2576d080d8c31698e83ec9f66bf97c677fa2aaf0d5bbb9f3345b1069'
             'SKIP'
             '5bdef5bd45907717ca1beb7342bc79c027a2487fc6bf9ca730dd1575eb6cf017'
             'SKIP'
-            'e1a9a84bef650ae7d85cd2f1b95554896d67947eb7cc5bb193ca9ac05dd499cf')
+            'd31fc9d19b74ff0ae27387a2decde1304193de7b078916a1314cecd4f2cb76c0')
 
 export KBUILD_BUILD_HOST=kernel.org
 export KBUILD_BUILD_USER=tj
