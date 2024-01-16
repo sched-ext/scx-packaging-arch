@@ -1,7 +1,7 @@
 pkgbase = linux
 	pkgdesc = Linux
 	pkgver = 6.7.scx2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/sched-ext/scx-kernel-releases
 	arch = x86_64
 	license = GPL2
@@ -31,7 +31,7 @@ pkgbase = linux
 	sha256sums = SKIP
 	sha256sums = 5bdef5bd45907717ca1beb7342bc79c027a2487fc6bf9ca730dd1575eb6cf017
 	sha256sums = SKIP
-	sha256sums = e1a9a84bef650ae7d85cd2f1b95554896d67947eb7cc5bb193ca9ac05dd499cf
+	sha256sums = 05674ad9de5f1493ae1b9ebc5c2175dac7830bdbc8e3e41cb68713d21523f6d2
 
 pkgname = linux
 	pkgdesc = The Linux kernel and modules
