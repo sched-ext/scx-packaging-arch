@@ -43,7 +43,7 @@ sha256sums=('ef31144a2576d080d8c31698e83ec9f66bf97c677fa2aaf0d5bbb9f3345b1069'
             'SKIP'
             '5bdef5bd45907717ca1beb7342bc79c027a2487fc6bf9ca730dd1575eb6cf017'
             'SKIP'
-            '05674ad9de5f1493ae1b9ebc5c2175dac7830bdbc8e3e41cb68713d21523f6d2')
+            '9e911bf363f3deff60136aad4c442493e30710949ff4444d1220bd0f8a9f2bd8')
 
 export KBUILD_BUILD_HOST=kernel.org
 export KBUILD_BUILD_USER=tj
