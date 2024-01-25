@@ -3,7 +3,7 @@
 pkgbase=linux
 pkgver=6.7.scx2
 _pkgver=6.7.0.scx2
-pkgrel=2
+pkgrel=3
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
@@ -32,6 +32,10 @@ source=(
   https://cdn.kernel.org/pub/linux/kernel/v${_pkgver%%.*}.x/${_srcname}.tar.{xz,sign}
   $url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.asc}
   config  # the main kernel config file
+  0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
+  0002-drivers-firmware-skip-simpledrm-if-nvidia-drm.modese.patch
+  0003-wifi-ath11k-rely-on-mac80211-debugfs-handling-for-vi.patch
+  0004-arch-Kconfig-Default-to-maximum-amount-of-ASLR-bits.patch
 )
 validpgpkeys=(
   ABAF11C65A2970B130ABE3C479BE3E4300411886  # Linus Torvalds
@@ -43,7 +47,11 @@ sha256sums=('ef31144a2576d080d8c31698e83ec9f66bf97c677fa2aaf0d5bbb9f3345b1069'
             'SKIP'
             '5bdef5bd45907717ca1beb7342bc79c027a2487fc6bf9ca730dd1575eb6cf017'
             'SKIP'
-            '9e911bf363f3deff60136aad4c442493e30710949ff4444d1220bd0f8a9f2bd8')
+            '15d79255f7a37bc71060d3a3804d349791f500650fe0c9dd75ef81373c7db1f0'
+            '1d8da585786ca62e91eba068b0090d57e79c5b0a6d11d732dc32845c3d730ad5'
+            '7f2ef383034389ff54976e1db23c0b22e476a113a74f7fc448a2d1773b81e384'
+            '217f22855fada971b955abdc1b55f4b762b50f124e30c30d1becc871b21029a8'
+            '75f47744d2dc7f311ef19f899483defce3dc37b9730eda914d0d25229c68769d')
 
 export KBUILD_BUILD_HOST=kernel.org
 export KBUILD_BUILD_USER=tj
