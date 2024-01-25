@@ -1,9 +1,9 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
 pkgbase=linux
-pkgver=6.7.scx2
-_pkgver=6.7.0.scx2
-pkgrel=3
+pkgver=6.7.scx3
+_pkgver=6.7.0.scx3
+pkgrel=1
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
@@ -41,11 +41,12 @@ validpgpkeys=(
   ABAF11C65A2970B130ABE3C479BE3E4300411886  # Linus Torvalds
   647F28654894E3BD457199BE38DBBDC86092693E  # Greg Kroah-Hartman
   697C63013E65270255EBC2608744DC1EB26B5A9A  # Tejun Heo <tj@kernel.org>
+  F5504C7B7B8107B40EF9E97AA1148BB3207BCC33  # David Vernet
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
 sha256sums=('ef31144a2576d080d8c31698e83ec9f66bf97c677fa2aaf0d5bbb9f3345b1069'
             'SKIP'
-            '5bdef5bd45907717ca1beb7342bc79c027a2487fc6bf9ca730dd1575eb6cf017'
+            '7155f9e4e3df879f7f3e468b2286458171e5dcc699cbcf501c4d64f5fabb9509'
             'SKIP'
             '15d79255f7a37bc71060d3a3804d349791f500650fe0c9dd75ef81373c7db1f0'
             '1d8da585786ca62e91eba068b0090d57e79c5b0a6d11d732dc32845c3d730ad5'
