@@ -1,7 +1,7 @@
 pkgbase = linux
 	pkgdesc = Linux
 	pkgver = 6.7.scx3
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/sched-ext/scx-kernel-releases
 	arch = x86_64
 	license = GPL2
@@ -36,7 +36,7 @@ pkgbase = linux
 	sha256sums = SKIP
 	sha256sums = 7155f9e4e3df879f7f3e468b2286458171e5dcc699cbcf501c4d64f5fabb9509
 	sha256sums = SKIP
-	sha256sums = 15d79255f7a37bc71060d3a3804d349791f500650fe0c9dd75ef81373c7db1f0
+	sha256sums = a8b3e5736b0fd62915e353463cbffc5ab10c0cc99ffab86fa04500944a3ede91
 	sha256sums = 1d8da585786ca62e91eba068b0090d57e79c5b0a6d11d732dc32845c3d730ad5
 	sha256sums = 7f2ef383034389ff54976e1db23c0b22e476a113a74f7fc448a2d1773b81e384
 	sha256sums = 217f22855fada971b955abdc1b55f4b762b50f124e30c30d1becc871b21029a8
