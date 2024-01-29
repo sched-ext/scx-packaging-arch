@@ -1,9 +1,9 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
 pkgbase=linux
-pkgver=6.7.scx3
-_pkgver=6.7.0.scx3
-pkgrel=2
+pkgver=6.7.scx4
+_pkgver=6.7.0.scx4
+pkgrel=1
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
@@ -46,7 +46,7 @@ validpgpkeys=(
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
 sha256sums=('ef31144a2576d080d8c31698e83ec9f66bf97c677fa2aaf0d5bbb9f3345b1069'
             'SKIP'
-            '7155f9e4e3df879f7f3e468b2286458171e5dcc699cbcf501c4d64f5fabb9509'
+            '4172920fa88f48e7d83378ce66175cb3697bce86fe65871c26d23a72c2be9ccf'
             'SKIP'
             'a8b3e5736b0fd62915e353463cbffc5ab10c0cc99ffab86fa04500944a3ede91'
             '1d8da585786ca62e91eba068b0090d57e79c5b0a6d11d732dc32845c3d730ad5'
