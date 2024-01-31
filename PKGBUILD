@@ -1,6 +1,6 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
-pkgbase=linux
+pkgbase=linux-sched-ext
 pkgver=6.7.1.scx1
 pkgrel=1
 pkgdesc='Linux'

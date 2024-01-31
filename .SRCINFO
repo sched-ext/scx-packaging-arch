@@ -1,4 +1,4 @@
-pkgbase = linux
+pkgbase = linux-sched-ext
 	pkgdesc = Linux
 	pkgver = 6.7.1.scx1
 	pkgrel = 1
@@ -42,7 +42,7 @@ pkgbase = linux
 	sha256sums = 217f22855fada971b955abdc1b55f4b762b50f124e30c30d1becc871b21029a8
 	sha256sums = 75f47744d2dc7f311ef19f899483defce3dc37b9730eda914d0d25229c68769d
 
-pkgname = linux
+pkgname = linux-sched-ext
 	pkgdesc = The Linux kernel and modules
 	depends = coreutils
 	depends = initramfs
@@ -55,9 +55,9 @@ pkgname = linux
 	replaces = virtualbox-guest-modules-arch
 	replaces = wireguard-arch
 
-pkgname = linux-headers
+pkgname = linux-sched-ext-headers
 	pkgdesc = Headers and scripts for building modules for the Linux kernel
 	depends = pahole
 
-pkgname = linux-docs
+pkgname = linux-sched-ext-docs
 	pkgdesc = Documentation for the Linux kernel
