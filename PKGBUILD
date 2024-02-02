@@ -1,8 +1,11 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+# Maintainer: Tejun Heo <tj@kernel.org>
+# Maintainer: Peter Jung ptr1337 <admin@ptr1337.dev>
+# Maintainer: Piotr Górski <lucjan.lucjanov@gmail.com>
 
 pkgbase=linux-sched-ext
 pkgver=6.7.1.scx1
-pkgrel=1
+pkgrel=2
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
@@ -47,7 +50,7 @@ sha256sums=('1ecffa568e86a2202ba5533ad9034bc263a9aa14e189597a94f09b3854ad68c3'
             'SKIP'
             '7566a661c41dcdb398f6462d4cc96b765b0ce1a90716ec21a5ee6cd4bb4655c6'
             'SKIP'
-            'a8b3e5736b0fd62915e353463cbffc5ab10c0cc99ffab86fa04500944a3ede91'
+            '1b80d2c19af5a88c0c7e0718e0f25d93313b7a086eb5983806e610dc99df03be'
             '1d8da585786ca62e91eba068b0090d57e79c5b0a6d11d732dc32845c3d730ad5'
             '7f2ef383034389ff54976e1db23c0b22e476a113a74f7fc448a2d1773b81e384'
             '217f22855fada971b955abdc1b55f4b762b50f124e30c30d1becc871b21029a8'
