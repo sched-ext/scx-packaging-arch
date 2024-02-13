@@ -4,8 +4,8 @@
 # Maintainer: Piotr Górski <lucjan.lucjanov@gmail.com>
 
 pkgbase=linux-sched-ext
-pkgver=6.7.1.scx1
-pkgrel=2
+pkgver=6.7.4.scx1
+pkgrel=1
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
@@ -36,8 +36,7 @@ source=(
   config  # the main kernel config file
   0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
   0002-drivers-firmware-skip-simpledrm-if-nvidia-drm.modese.patch
-  0003-wifi-ath11k-rely-on-mac80211-debugfs-handling-for-vi.patch
-  0004-arch-Kconfig-Default-to-maximum-amount-of-ASLR-bits.patch
+  0003-arch-Kconfig-Default-to-maximum-amount-of-ASLR-bits.patch
 )
 validpgpkeys=(
   ABAF11C65A2970B130ABE3C479BE3E4300411886  # Linus Torvalds
@@ -46,15 +45,14 @@ validpgpkeys=(
   F5504C7B7B8107B40EF9E97AA1148BB3207BCC33  # David Vernet
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('1ecffa568e86a2202ba5533ad9034bc263a9aa14e189597a94f09b3854ad68c3'
+sha256sums=('f68d9f5ffc0a24f850699b86c8aea8b8687de7384158d5ed3bede37de098d60c'
             'SKIP'
-            '7566a661c41dcdb398f6462d4cc96b765b0ce1a90716ec21a5ee6cd4bb4655c6'
+            '6937f52f2f242d660b02a56b3231d38069463355b29f2b79925a264c7652be0b'
             'SKIP'
-            '1b80d2c19af5a88c0c7e0718e0f25d93313b7a086eb5983806e610dc99df03be'
-            '1d8da585786ca62e91eba068b0090d57e79c5b0a6d11d732dc32845c3d730ad5'
-            '7f2ef383034389ff54976e1db23c0b22e476a113a74f7fc448a2d1773b81e384'
-            '217f22855fada971b955abdc1b55f4b762b50f124e30c30d1becc871b21029a8'
-            '75f47744d2dc7f311ef19f899483defce3dc37b9730eda914d0d25229c68769d')
+            'e512e61e0db0b3bc1bec769071717808e1081cef557c219e68a7560224901fba'
+            '4422bca597c048f8e18b47fc873b160eec945a434bbb51cbedeaf880d7e8d9fa'
+            '967b789d2448898bafbd7cb5ae052f935c5fa26a9b27e2327d5987b9ec37dfbb'
+            '526b598fd59ef3c13fc1186b0abbf19ffb03eb27ba8f2072eb8525337bd11107')
 
 export KBUILD_BUILD_HOST=kernel.org
 export KBUILD_BUILD_USER=tj
