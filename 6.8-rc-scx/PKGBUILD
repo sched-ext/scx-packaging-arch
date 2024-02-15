@@ -3,7 +3,7 @@
 # Maintainer: Peter Jung ptr1337 <admin@ptr1337.dev>
 # Maintainer: Piotr Górski <lucjan.lucjanov@gmail.com>
 
-pkgbase=linux-sched-ext
+pkgbase=linux-sched-ext-rc
 _tag=v6.8-rc4
 pkgver=6.8rc4.scx2
 _pkgver=6.8.0-rc4.scx2
