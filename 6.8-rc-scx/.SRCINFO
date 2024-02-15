@@ -1,6 +1,6 @@
 pkgbase = linux-sched-ext
 	pkgdesc = Linux
-	pkgver = 6.8rc4.scx1
+	pkgver = 6.8rc4.scx2
 	pkgrel = 1
 	url = https://github.com/sched-ext/scx-kernel-releases
 	arch = x86_64
@@ -21,8 +21,8 @@ pkgbase = linux-sched-ext
 	makedepends = texlive-latexextra
 	options = !strip
 	source = linux-v6.8-rc4::git+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git#tag=v6.8-rc4
-	source = https://github.com/sched-ext/scx-kernel-releases/releases/download/v6.8.0-rc4-scx1/linux-v6.8.0-rc4-scx1.patch.zst
-	source = https://github.com/sched-ext/scx-kernel-releases/releases/download/v6.8.0-rc4-scx1/linux-v6.8.0-rc4-scx1.patch.zst.asc
+	source = https://github.com/sched-ext/scx-kernel-releases/releases/download/v6.8.0-rc4-scx2/linux-v6.8.0-rc4-scx2.patch.zst
+	source = https://github.com/sched-ext/scx-kernel-releases/releases/download/v6.8.0-rc4-scx2/linux-v6.8.0-rc4-scx2.patch.zst.asc
 	source = config
 	source = 0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
 	source = 0002-drivers-firmware-skip-simpledrm-if-nvidia-drm.modese.patch
@@ -32,7 +32,7 @@ pkgbase = linux-sched-ext
 	validpgpkeys = 697C63013E65270255EBC2608744DC1EB26B5A9A
 	validpgpkeys = F5504C7B7B8107B40EF9E97AA1148BB3207BCC33
 	sha256sums = SKIP
-	sha256sums = e48f7a34fa52e44771fd3f9ffaa5018dd41f674e9f63f59f1cb0b42b26ef468d
+	sha256sums = 17334d7f8f7ce734baed89024ca8ebd8c9a0c4d0206aaa505467a7d4d033beb1
 	sha256sums = SKIP
 	sha256sums = ca588923cd41b08eb920c9bc44cc89137c95f3c0cb1bd6650d638e69711dc84a
 	sha256sums = e1f0ee1527c15848e108911e4bd6474d767268dfd7830ccffd05520d79bed1ff

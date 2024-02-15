@@ -5,8 +5,8 @@
 
 pkgbase=linux-sched-ext
 _tag=v6.8-rc4
-pkgver=6.8rc4.scx1
-_pkgver=6.8.0-rc4.scx1
+pkgver=6.8rc4.scx2
+_pkgver=6.8.0-rc4.scx2
 pkgrel=1
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
@@ -49,7 +49,7 @@ validpgpkeys=(
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
 sha256sums=('SKIP'
-            'e48f7a34fa52e44771fd3f9ffaa5018dd41f674e9f63f59f1cb0b42b26ef468d'
+            '17334d7f8f7ce734baed89024ca8ebd8c9a0c4d0206aaa505467a7d4d033beb1'
             'SKIP'
             'ca588923cd41b08eb920c9bc44cc89137c95f3c0cb1bd6650d638e69711dc84a'
             'e1f0ee1527c15848e108911e4bd6474d767268dfd7830ccffd05520d79bed1ff'
