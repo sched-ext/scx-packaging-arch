@@ -4,10 +4,10 @@
 # Maintainer: Piotr Górski <lucjan.lucjanov@gmail.com>
 
 pkgbase=linux-sched-ext-rc
-_tag=v6.8-rc4
+_tag=6.8-rc4
 pkgver=6.8rc4.scx2
 _pkgver=6.8.0-rc4.scx2
-pkgrel=2
+pkgrel=3
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
@@ -34,7 +34,7 @@ options=('!strip')
 _srcname=linux-${_tag}
 _srctag=v${_pkgver%.*}-${_pkgver##*.}
 source=(
-  "$_srcname::git+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git#tag=$_tag"
+  "$_srcname::https://github.com/torvalds/linux/archive/refs/tags/v$_tag.tar.gz"
   $url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.asc}
   config  # the main kernel config file
   0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
@@ -48,7 +48,7 @@ validpgpkeys=(
   F5504C7B7B8107B40EF9E97AA1148BB3207BCC33  # David Vernet
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('SKIP'
+sha256sums=('b0bca93f23211616a68503960c8933679715ad67e86436f7a6b25a1120fa514d'
             '17334d7f8f7ce734baed89024ca8ebd8c9a0c4d0206aaa505467a7d4d033beb1'
             'SKIP'
             'ca588923cd41b08eb920c9bc44cc89137c95f3c0cb1bd6650d638e69711dc84a'
