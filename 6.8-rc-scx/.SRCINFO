@@ -1,7 +1,7 @@
 pkgbase = linux-sched-ext-rc
 	pkgdesc = Linux
 	pkgver = 6.8rc4.scx2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/sched-ext/scx-kernel-releases
 	arch = x86_64
 	license = GPL2
@@ -55,6 +55,3 @@ pkgname = linux-sched-ext-rc
 pkgname = linux-sched-ext-rc-headers
 	pkgdesc = Headers and scripts for building modules for the Linux kernel
 	depends = pahole
-
-pkgname = linux-sched-ext-rc-docs
-	pkgdesc = Documentation for the Linux kernel

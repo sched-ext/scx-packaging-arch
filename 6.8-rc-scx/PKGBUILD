@@ -7,7 +7,7 @@ pkgbase=linux-sched-ext-rc
 _tag=v6.8-rc4
 pkgver=6.8rc4.scx2
 _pkgver=6.8.0-rc4.scx2
-pkgrel=1
+pkgrel=2
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
@@ -90,7 +90,7 @@ prepare() {
 build() {
   cd $_srcname
   make all
-  make htmldocs
+  #make htmldocs
 }
 
 _package() {
@@ -215,29 +215,29 @@ _package-headers() {
   ln -sr "$builddir" "$pkgdir/usr/src/$pkgbase"
 }
 
-_package-docs() {
-  pkgdesc="Documentation for the $pkgdesc kernel"
-
-  cd $_srcname
-  local builddir="$pkgdir/usr/lib/modules/$(<version)/build"
-
-  echo "Installing documentation..."
-  local src dst
-  while read -rd '' src; do
-    dst="${src#Documentation/}"
-    dst="$builddir/Documentation/${dst#output/}"
-    install -Dm644 "$src" "$dst"
-  done < <(find Documentation -name '.*' -prune -o ! -type d -print0)
-
-  echo "Adding symlink..."
-  mkdir -p "$pkgdir/usr/share/doc"
-  ln -sr "$builddir/Documentation" "$pkgdir/usr/share/doc/$pkgbase"
-}
+#_package-docs() {
+#  pkgdesc="Documentation for the $pkgdesc kernel"
+#
+#  cd $_srcname
+#  local builddir="$pkgdir/usr/lib/modules/$(<version)/build"
+#
+#  echo "Installing documentation..."
+#  local src dst
+#  while read -rd '' src; do
+#    dst="${src#Documentation/}"
+#    dst="$builddir/Documentation/${dst#output/}"
+#    install -Dm644 "$src" "$dst"
+#  done < <(find Documentation -name '.*' -prune -o ! -type d -print0)
+#
+#  echo "Adding symlink..."
+#  mkdir -p "$pkgdir/usr/share/doc"
+#  ln -sr "$builddir/Documentation" "$pkgdir/usr/share/doc/$pkgbase"
+#}
 
 pkgname=(
   "$pkgbase"
   "$pkgbase-headers"
-  "$pkgbase-docs"
+  #"$pkgbase-docs"
 )
 for _p in "${pkgname[@]}"; do
   eval "package_$_p() {
