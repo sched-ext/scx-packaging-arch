@@ -1,7 +1,7 @@
 pkgbase = linux-sched-ext
 	pkgdesc = Linux
 	pkgver = 6.8.scx1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/sched-ext/scx-kernel-releases
 	arch = x86_64
 	license = GPL2
