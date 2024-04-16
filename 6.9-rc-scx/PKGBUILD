@@ -11,7 +11,7 @@ pkgrel=1
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
-license=(GPL2)
+license=(GPL-2.0-only)
 makedepends=(
   bc
   cpio
@@ -30,7 +30,10 @@ makedepends=(
   python-sphinx
   texlive-latexextra
 )
-options=('!strip')
+options=(
+  !debug
+  !strip
+)
 _srcname=linux-${_tag}
 _srctag=v${_pkgver%.*}-${_pkgver##*.}
 source=(
