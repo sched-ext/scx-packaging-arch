@@ -3,11 +3,10 @@
 # Maintainer: Peter Jung ptr1337 <admin@ptr1337.dev>
 # Maintainer: Piotr Górski <lucjan.lucjanov@gmail.com>
 
-pkgbase=linux-sched-ext-rc
-_tag=6.9-rc7
-pkgver=6.9rc7.scx1
-_pkgver=6.9-rc7.scx1
-pkgrel=2
+pkgbase=linux-sched-ext
+pkgver=6.9.1.scx1
+_pkgver=6.9.1.scx1
+pkgrel=1
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
@@ -34,10 +33,10 @@ options=(
   !debug
   !strip
 )
-_srcname=linux-${_tag}
-_srctag=v${_pkgver%.*}-${_pkgver##*.}
+_srcname=linux-${pkgver%.*}
+_srctag=v${pkgver%.*}-${pkgver##*.}
 source=(
-  "$_srcname::https://github.com/torvalds/linux/archive/refs/tags/v$_tag.tar.gz"
+  https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.{xz,sign}
   $url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.asc}
   config  # the main kernel config file
   0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
@@ -51,8 +50,9 @@ validpgpkeys=(
   F5504C7B7B8107B40EF9E97AA1148BB3207BCC33  # David Vernet
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('74a7b9cda13269ec4287f395ea8ae0398d187a97e8ed4f7400fe7fa366debda8'
-            '42e23a83b6fc05107749d4b050422dd5d420bac08d88717b63e835867afe903d'
+sha256sums=('01b414ba98fd189ecd544435caf3860ae2a790e3ec48f5aa70fdf42dc4c5c04a'
+            'SKIP'
+            'a59b0db258d14dd10326a56734b86ee7f0d66691892411ee9a2ffcc0359b6e1b'
             'SKIP'
             'e0352ba4caec7c573c785680f0ecb0443a8e800999e6c80e9471ef7f47aa6d21'
             '14488e2690a10119f279ce037655910dbe0857cbbd134e4da6f48ac7f6f57267'
