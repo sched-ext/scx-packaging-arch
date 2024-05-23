@@ -5,7 +5,7 @@
 
 pkgbase=linux-sched-ext
 pkgver=6.9.1.scx1
-pkgrel=1
+pkgrel=2
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
 arch=(x86_64)
@@ -54,7 +54,7 @@ sha256sums=('01b414ba98fd189ecd544435caf3860ae2a790e3ec48f5aa70fdf42dc4c5c04a'
             'SKIP'
             'a59b0db258d14dd10326a56734b86ee7f0d66691892411ee9a2ffcc0359b6e1b'
             'SKIP'
-            'e0352ba4caec7c573c785680f0ecb0443a8e800999e6c80e9471ef7f47aa6d21'
+            'd527e594fdb681e8ecd8038892a28c7dfd2ab1e17050ec56acdb0f15fcd53979'
             '14488e2690a10119f279ce037655910dbe0857cbbd134e4da6f48ac7f6f57267'
             'a48479b440827a95992d3d064e295e0b62442fe25579cd58b26d22e03b0b0cfa'
             'c4559cab8ce4ad799689a8eac25e9feddf57029f6441567ba14a0c5bd6cdd96f')
