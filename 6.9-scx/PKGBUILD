@@ -4,7 +4,7 @@
 # Maintainer: Piotr Górski <lucjan.lucjanov@gmail.com>
 
 pkgbase=linux-sched-ext
-pkgver=6.9.3.scx1
+pkgver=6.9.5.scx1
 pkgrel=1
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
@@ -50,9 +50,9 @@ validpgpkeys=(
   F5504C7B7B8107B40EF9E97AA1148BB3207BCC33  # David Vernet
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('c321c46401368774fc236f57095b205a5da57415f9a6008018902f9fd5eddfae'
+sha256sums=('a51fb4ab5003a6149bd9bf4c18c9b1f0f4945c272549095ab154b9d1052f95b1'
             'SKIP'
-            '0b93ecf7b70b978923b0492e824dc6a175d506c1e3a4239d27fac0f5af57fa9a'
+            '70434d69b1f18eb2c135a4b35ce2e393347f575b5961daa4d5c55e34d4792038'
             'SKIP'
             '119b7ed80c6573fcafa957cf6912ae6749799f20631eda7d17a64af56999e9a9'
             '14488e2690a10119f279ce037655910dbe0857cbbd134e4da6f48ac7f6f57267'
