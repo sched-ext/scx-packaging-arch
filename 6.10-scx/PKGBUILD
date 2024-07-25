@@ -3,10 +3,8 @@
 # Maintainer: Peter Jung ptr1337 <admin@ptr1337.dev>
 # Maintainer: Piotr Górski <lucjan.lucjanov@gmail.com>
 
-pkgbase=linux-sched-ext-rc
-_tag=6.10-rc7
-pkgver=6.10rc7.scx1
-_pkgver=6.10-rc7.scx1
+pkgbase=linux-sched-ext
+pkgver=6.10.1.scx1
 pkgrel=1
 pkgdesc='Linux'
 url='https://github.com/sched-ext/scx-kernel-releases'
@@ -34,11 +32,12 @@ options=(
   !debug
   !strip
 )
-_srcname=linux-${_tag}
-_srctag=v${_pkgver%.*}-${_pkgver##*.}
+_srcname=linux-${pkgver%.*}
+_srctag=v${pkgver%.*}-${pkgver##*.}
 source=(
-  "$_srcname::https://github.com/torvalds/linux/archive/refs/tags/v$_tag.tar.gz"
+  https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.{xz,sign}
   $url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.asc}
+  #$url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.sig}
   config  # the main kernel config file
   0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
   0002-drivers-firmware-skip-simpledrm-if-nvidia-drm.modese.patch
@@ -51,10 +50,11 @@ validpgpkeys=(
   F5504C7B7B8107B40EF9E97AA1148BB3207BCC33  # David Vernet
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('33b32ea6a84f016b2fe077c31f8ce1811048f8ec5d93f46b5e09e5b575fbc60d'
-            'd206c2f49c819a1577ea7c10d6d9b4b728205fdfdc9486359c654cfb9ede94bf'
+sha256sums=('70109dfd1cd1c5f8a58eb1cb37122b9bf93f9c6a6280bf91019263c7339cf76b'
             'SKIP'
-            'aebb04bf369c372bf2d5e4243e5b8c137b725a9175bea78bc06437cf80db4397'
+            '6fa9c90d1e825e737d1f23fb2b9b427acd33d31cc9dcff212a0a6fd1b8fddb1e'
+            'SKIP'
+            '7e51276c959d14bbe65ccbc9e86707dde9ac0af2783f86a1029d7e19c2eda6d8'
             '14488e2690a10119f279ce037655910dbe0857cbbd134e4da6f48ac7f6f57267'
             'a48479b440827a95992d3d064e295e0b62442fe25579cd58b26d22e03b0b0cfa'
             'c4559cab8ce4ad799689a8eac25e9feddf57029f6441567ba14a0c5bd6cdd96f')
